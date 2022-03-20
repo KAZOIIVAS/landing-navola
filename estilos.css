@@ -113,6 +113,10 @@ nav button:hover{
     background-color: rgb(248, 4, 4);
     text-align: -webkit-match-parent;
 }
+section{
+    width: 100%;
+    
+}
 .extra{
     display:flex;
     justify-content: flex-start;
@@ -125,13 +129,16 @@ nav button:hover{
     display: flex;
     margin: 32px;
     justify-content: center;
+    width: 100%;
 }
  
-
+.extra img{
+    width: 70%;
+}
 .testimonio{
     display: flex;
     align-items: center;
-    border:2px solid green;
+    
 }
 footer{
     width: 100%;
@@ -143,11 +150,13 @@ footer{
     justify-content: space-around;
     align-items:flex-start;
     
-    border: 2px solid black;
+    
 }
-.columna{
+#columna{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+
 }
 footer a{
     font-size: 100%;
@@ -155,3 +164,36 @@ footer a{
     text-decoration: none;
     
 }
+@media (max-width: 900px) {
+    .extra{
+        flex-direction: column;
+        align-items: center;
+    }
+    .extra img{
+        width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .contenedores{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .contenedor{
+        width: 100%;
+        padding: 5%;
+        margin: 0.5%;
+    }
+  }
+  @media (max-width: 550px) {
+    .jumbotron{
+        flex-direction: column;
+    }
+    .jumbotron img{
+        width: 95%;
+    }
+    nav{
+        flex-direction: column;
+        align-items:center;
+    }
+  }
